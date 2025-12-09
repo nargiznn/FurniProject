@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "k3J0evAIOeTSOJ2Obkictl/+2oR70FFEaIkVmvFfv7KYwSt5CLPYw3pgmzb62PxUM1qrxUnf2ccfVHFMk/C8CQ==",
+  "success": true,
+  "projectFilePath": "/Users/nergiznadirli/Desktop/Furni/EcommerceConsume/EcommerceConsume/EcommerceConsume.csproj",
+  "expectedPackageFiles": [
+    "/Users/nergiznadirli/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
