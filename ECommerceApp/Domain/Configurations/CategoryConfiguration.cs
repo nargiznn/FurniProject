@@ -13,6 +13,9 @@ namespace Domain.Configurations
                  .HasMaxLength(50)
                  .IsRequired();
 
+            builder.HasIndex(m => m.Name)
+            .IsUnique();
+  
             builder.Property(m => m.Description)
                 .HasMaxLength(250);
 
