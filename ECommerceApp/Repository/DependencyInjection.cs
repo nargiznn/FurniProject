@@ -10,6 +10,7 @@ namespace Repository
 		public static IServiceCollection AddRepositoryLayer(this IServiceCollection services)
 		{
 			services.AddScoped<ICategoryRepository, CategoryRepository>();
+			services.AddScoped<IBrandRepository, BrandRepository>();
 			return services;
 		}
 	}

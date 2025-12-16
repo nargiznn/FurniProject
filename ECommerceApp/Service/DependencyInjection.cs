@@ -15,6 +15,7 @@ namespace Service
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IBrandService, BrandService>();
             services.AddScoped<IAccountService, AccountService>();
             return services;
         }

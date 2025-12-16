@@ -1,0 +1,53 @@
+﻿<Properties StartupConfiguration="{024F892A-E2C1-4275-A2E9-8584D67C97F6}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EcommerceConsume/Areas/Admin/Views/Category/Detail.cshtml">
+    <Files>
+      <File FileName="EcommerceConsume/Controllers/HomeController.cs" />
+      <File FileName="EcommerceConsume/Models/Category.cs" />
+      <File FileName="EcommerceConsume/Views/Home/Index.cshtml" />
+      <File FileName="EcommerceConsume/Views/_ViewImports.cshtml" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/_ViewStart.cshtml" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/_ViewImports.cshtml" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/Shared/_Layout.cshtml" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/Category/Index.cshtml" />
+      <File FileName="EcommerceConsume/Program.cs" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/Category/Create.cshtml" />
+      <File FileName="EcommerceConsume/Areas/Admin/Controllers/CategoryController.cs" />
+      <File FileName="EcommerceConsume/Areas/Admin/ViewModels/Categories/CategoryEditVM.cs" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/Category/Edit.cshtml" />
+      <File FileName="EcommerceConsume/Areas/Admin/Views/Category/Detail.cshtml" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EcommerceConsume" expanded="True">
+            <Node name="EcommerceConsume" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="Category" expanded="True">
+                      <Node name="Detail.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EcommerceConsume PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

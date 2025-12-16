@@ -43,9 +43,10 @@
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.AssemblyInfoInputs.cache
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.AssemblyInfo.cs
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.csproj.CoreCompileInputs.cache
-/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.csproj.CopyComplete
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.dll
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/refint/Repository.dll
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.pdb
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.genruntimeconfig.cache
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/ref/Repository.dll
+/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.sourcelink.json
+/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.csproj.Up2Date
