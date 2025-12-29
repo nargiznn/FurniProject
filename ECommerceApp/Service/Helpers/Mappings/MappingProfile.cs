@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Identity;
 using Service.Helpers.DTOs.Account;
 using Service.Helpers.DTOs.Brand;
 using Service.Helpers.DTOs.Categories;
+using Service.Helpers.DTOs.Product;
+using Service.Helpers.DTOs.Slider;
 
 namespace Service.Helpers.Mappings
 {
@@ -47,10 +49,35 @@ namespace Service.Helpers.Mappings
 
             #endregion
 
+            #region Product
+            CreateMap<Product, ProductDto>()
+                     .ForMember(x => x.Date,
+                      opt => opt.MapFrom(src => src.CreatedDate.ToString("dd.MM.yyyy")))
+                     .ForMember(x => x.CategoryName,
+                      opt => opt.MapFrom(src => src.Category.Name));
+
+            CreateMap<ProductCreateDto, Product>();
+
+            CreateMap<ProductEditDto, Product>()
+                .ForAllMembers(opts =>
+                {
+                    opts.AllowNull();
+                    opts.Condition((src, dest, srcMember) =>
+                        srcMember != null &&
+                        !(srcMember is string str && string.IsNullOrWhiteSpace(str))
+                    );
+                });
+
+            #endregion
+
             #region Account
             CreateMap<SignUpDto, AppUser>();
             CreateMap<AppUser, UserDto>();
             CreateMap<IdentityRole, RoleDto>();
+            #endregion
+
+            #region
+            CreateMap<Slider, SliderDto>();
             #endregion
         }
     }

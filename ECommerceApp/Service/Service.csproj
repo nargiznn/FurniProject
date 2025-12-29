@@ -21,6 +21,8 @@
     <None Remove="Helpers\Responses\" />
     <None Remove="Helpers\Enums\" />
     <None Remove="Helpers\DTOs\Brand\" />
+    <None Remove="Helpers\DTOs\Product\" />
+    <None Remove="Helpers\DTOs\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -34,6 +36,8 @@
     <Folder Include="Helpers\Responses\" />
     <Folder Include="Helpers\Enums\" />
     <Folder Include="Helpers\DTOs\Brand\" />
+    <Folder Include="Helpers\DTOs\Product\" />
+    <Folder Include="Helpers\DTOs\Slider\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.20">
