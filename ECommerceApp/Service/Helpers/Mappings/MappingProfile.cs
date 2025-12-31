@@ -7,6 +7,7 @@ using Service.Helpers.DTOs.Account;
 using Service.Helpers.DTOs.Brand;
 using Service.Helpers.DTOs.Categories;
 using Service.Helpers.DTOs.Product;
+using Service.Helpers.DTOs.Setting;
 using Service.Helpers.DTOs.Slider;
 
 namespace Service.Helpers.Mappings
@@ -76,8 +77,20 @@ namespace Service.Helpers.Mappings
             CreateMap<IdentityRole, RoleDto>();
             #endregion
 
-            #region
+            #region Slider
             CreateMap<Slider, SliderDto>();
+            #endregion
+
+            #region Setting
+            CreateMap<Setting, SettingDto>();
+            CreateMap<SettingEditDto, Setting>()
+            .ForAllMembers(opts =>
+            {
+                opts.AllowNull();
+                opts.Condition((src, dest, srcMember) => srcMember != null);
+            });
+
+            //CreateMap<Statistic, StatisticDto>();
             #endregion
         }
     }

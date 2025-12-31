@@ -1,58 +1,68 @@
 ﻿<Properties StartupConfiguration="{5BD496E2-F4D4-46D3-B022-620159D92A3F}|http">
   <MonoDevelop.Ide.ItemProperties.ECommerceApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ECommerceApp/Controllers/UI/AccountController.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service/Helpers/DTOs/Slider/SliderDto.cs">
     <Files>
-      <File FileName="Domain/Entities/Category.cs" Line="1" Column="1" />
-      <File FileName="ECommerceApp/Controllers/Admin/CategoryController.cs" Line="1" Column="1" />
-      <File FileName="Domain/Configurations/CategoryConfiguration.cs" Line="16" Column="42" />
-      <File FileName="ECommerceApp/Helpers/Validators/SignInDtoValidator.cs" Line="1" Column="1" />
-      <File FileName="Domain/Entities/ProductImage.cs" Line="8" Column="37" />
-      <File FileName="ECommerceApp/Controllers/UI/AccountController.cs" Line="1" Column="1" />
+      <File FileName="Domain/Entities/ProductImage.cs" Line="13" Column="43" />
+      <File FileName="ECommerceApp/Controllers/UI/AccountController.cs" Line="29" Column="33" />
+      <File FileName="Domain/Entities/Slider.cs" Line="8" Column="1" />
+      <File FileName="Repository/Data/AppDbContext.cs" Line="12" Column="49" />
+      <File FileName="Service/Helpers/DTOs/Slider/SliderDto.cs" Line="20" Column="39" />
+      <File FileName="Service/Helpers/Mappings/MappingProfile.cs" Line="71" Column="23" />
+      <File FileName="Service/Services/Interfaces/ISliderService.cs" Line="14" Column="47" />
+      <File FileName="Service/Services/SliderService.cs" Line="28" Column="1" />
+      <File FileName="Service/Services/ProductService.cs" Line="1" Column="1" />
+      <File FileName="Repository/Repositories/Interfaces/ISliderRepository.cs" Line="6" Column="36" />
+      <File FileName="Service/Services/CategoryService.cs" Line="14" Column="1" />
+      <File FileName="Repository/Repositories/Interfaces/IBaseRepository.cs" Line="20" Column="1" />
+      <File FileName="Repository/Repositories/BaseRepository.cs" Line="20" Column="10" />
+      <File FileName="Service/DependencyInjection.cs" Line="27" Column="1" />
+      <File FileName="ECommerceApp/Controllers/UI/SliderController.cs" Line="19" Column="10" />
+      <File FileName="ECommerceApp/Controllers/Admin/BrandController.cs" Line="19" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ECommerceApp" expanded="True">
             <Node name="Domain">
-              <Node name="Common" expanded="True" />
               <Node name="Configurations" expanded="True" />
               <Node name="Entities" expanded="True" />
             </Node>
-            <Node name="ECommerceApp" expanded="True">
+            <Node name="ECommerceApp">
               <Node name="Controllers" expanded="True">
                 <Node name="Admin" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="AccountController.cs" selected="True" />
-                </Node>
+                <Node name="UI" expanded="True" />
               </Node>
               <Node name="Helpers" expanded="True">
                 <Node name="Validators" expanded="True" />
               </Node>
             </Node>
-            <Node name="Repository" expanded="True">
+            <Node name="Repository">
               <Node name="Data" expanded="True" />
               <Node name="Repositories" expanded="True">
                 <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
-            <Node name="Service" expanded="True">
-              <Node name="Helpers" expanded="True">
-                <Node name="DTOs" expanded="True" />
+            <Node name="Service">
+              <Node name="Helpers">
+                <Node name="DTOs" expanded="True">
+                  <Node name="Product" expanded="True" />
+                  <Node name="Slider" expanded="True">
+                    <Node name="SliderDto.cs" selected="True" />
+                  </Node>
+                </Node>
+                <Node name="Mappings" expanded="True" />
               </Node>
-              <Node name="Middlewares" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Interfaces" expanded="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

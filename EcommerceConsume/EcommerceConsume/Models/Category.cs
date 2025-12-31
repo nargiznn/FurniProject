@@ -1,9 +1,10 @@
 ﻿using System;
+using EcommerceConsume.Common;
+
 namespace EcommerceConsume.Models
 {
-	public class Category
+	public class Category:BaseEntity
 	{
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Date { get; set; }
     }

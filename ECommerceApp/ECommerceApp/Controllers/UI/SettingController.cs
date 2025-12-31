@@ -1,0 +1,55 @@
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using Repository.Exceptions;
+using Service.Helpers.DTOs.Setting;
+using Service.Services.Interfaces;
+
+namespace ECommerceApp.Controllers.UI
+{
+	public class SettingController:BaseController
+	{
+        private readonly ISettingService _settingService;
+        public SettingController(ISettingService settingService)
+        {
+            _settingService = settingService;
+        }
+        [ProducesResponseType(typeof(SettingDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(SettingDto), StatusCodes.Status404NotFound)]
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById([FromRoute] int id)
+        {
+            try
+            {
+                return Ok(await _settingService.GetByIdAsync(id));
+
+            }
+            catch (NotFoundException)
+            {
+                return NotFound();
+            }
+        }
+        [ProducesResponseType(typeof(SettingDto), StatusCodes.Status200OK)]
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+
+            return Ok(await _settingService.GetAllAsync());
+        }
+
+        [ProducesResponseType(typeof(SettingDto), StatusCodes.Status200OK)]
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Edit([FromRoute] int id, [FromForm] SettingEditDto request)
+        {
+            try
+            {
+                await _settingService.EditAsync(id, request);
+                return Ok("Setting updated successfully");
+            }
+            catch (NotFoundException)
+            {
+                return NotFound();
+            }
+        }
+    }
+}
+

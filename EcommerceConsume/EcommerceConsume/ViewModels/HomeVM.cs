@@ -6,6 +6,7 @@ namespace EcommerceConsume.ViewModels
 	public class HomeVM
 	{
         public IEnumerable<Slider> Sliders { get; set; } = new List<Slider>();
+        public Dictionary<string, string> Settings { get; set; } = new Dictionary<string, string>();
     }
 }
 

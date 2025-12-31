@@ -45,19 +45,19 @@ public class HomeController : Controller
                 //}
 
 
-                //var settingResponse = await client.GetAsync($"{BaseURl}/api/setting/GetAll");
-                //if (settingResponse.IsSuccessStatusCode)
-                //{
-                //    string settingApiResponse = await settingResponse.Content.ReadAsStringAsync();
-                //    var settings = JsonConvert.DeserializeObject<IEnumerable<Setting>>(settingApiResponse);
-                //    homeVM.Settings = settings.ToDictionary(s => s.Key, s => s.Value);
-                //}
+                var settingResponse = await client.GetAsync($"{BaseURl}/api/setting/GetAll");
+                if (settingResponse.IsSuccessStatusCode)
+                {
+                    string settingApiResponse = await settingResponse.Content.ReadAsStringAsync();
+                    var settings = JsonConvert.DeserializeObject<IEnumerable<Setting>>(settingApiResponse);
+                    homeVM.Settings = settings.ToDictionary(s => s.Key, s => s.Value);
+                }
 
-                //else
-                //{
-                //    ViewData["Error"] = "API request failed with status code: " + settingResponse.StatusCode;
-                //    homeVM.Settings = new Dictionary<string, string>();
-                //}
+                else
+                {
+                    ViewData["Error"] = "API request failed with status code: " + settingResponse.StatusCode;
+                    homeVM.Settings = new Dictionary<string, string>();
+                }
                 var sliderResponse = await client.GetAsync(
                     $"{BaseURl}/api/Slider/GetAllActive/active"
                 );
