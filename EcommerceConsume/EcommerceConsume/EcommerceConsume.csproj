@@ -21,6 +21,7 @@
     <None Remove="Areas\Admin\ViewModels\Categories\" />
     <None Remove="ViewModels\" />
     <None Remove="Common\" />
+    <None Remove="Views\Blog\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -35,6 +36,7 @@
     <Folder Include="Areas\Admin\ViewModels\Categories\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Common\" />
+    <Folder Include="Views\Blog\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />

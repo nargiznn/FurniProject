@@ -14,6 +14,7 @@ namespace Repository
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ISliderRepository, SliderRepository>();
             services.AddScoped<ISettingRepository, SettingRepository>();
+            services.AddScoped<IBlogPostRepository, BlogPostRepository>();
             return services;
 		}
 	}

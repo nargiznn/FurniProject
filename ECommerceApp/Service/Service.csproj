@@ -24,6 +24,7 @@
     <None Remove="Helpers\DTOs\Product\" />
     <None Remove="Helpers\DTOs\Slider\" />
     <None Remove="Helpers\DTOs\Setting\" />
+    <None Remove="Helpers\DTOs\BlogPost\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -40,6 +41,7 @@
     <Folder Include="Helpers\DTOs\Product\" />
     <Folder Include="Helpers\DTOs\Slider\" />
     <Folder Include="Helpers\DTOs\Setting\" />
+    <Folder Include="Helpers\DTOs\BlogPost\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.20">

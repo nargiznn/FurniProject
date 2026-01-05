@@ -4,6 +4,7 @@ using AutoMapper;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Service.Helpers.DTOs.Account;
+using Service.Helpers.DTOs.BlogPost;
 using Service.Helpers.DTOs.Brand;
 using Service.Helpers.DTOs.Categories;
 using Service.Helpers.DTOs.Product;
@@ -91,6 +92,10 @@ namespace Service.Helpers.Mappings
             });
 
             //CreateMap<Statistic, StatisticDto>();
+            #endregion
+
+            #region BlogPost
+            CreateMap<BlogPost, BlogPostDto>();
             #endregion
         }
     }

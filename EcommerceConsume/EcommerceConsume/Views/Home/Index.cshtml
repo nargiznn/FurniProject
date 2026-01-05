@@ -39,45 +39,23 @@
                     <p><a href="shop.html" class="btn">Explore</a></p>
                 </div>
                 <!-- End Column 1 -->
-                <!-- Start Column 2 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="~/assets/images/product-1.png" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Nordic Chair</h3>
-                        <strong class="product-price">$50.00</strong>
+                @foreach (var item in Model.Products.TakeLast(3))
+                {
+                    <!-- Start Column 2 -->
+                    <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+                        <a class="product-item" href="cart.html">
+                            <img src="~/assets/images/product-1.png" class="img-fluid product-thumbnail">
+                            <h3 class="product-title">@item.Name</h3>
+                            <strong class="product-price">$@item.Price.ToString("F2")</strong>
 
-                        <span class="icon-cross">
-                            <img src="~/assets/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
-                <!-- End Column 2 -->
-                <!-- Start Column 3 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="~/assets/images/product-2.png" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Kruzo Aero Chair</h3>
-                        <strong class="product-price">$78.00</strong>
+                            <span class="icon-cross">
+                                <img src="~/assets/images/cross.svg" class="img-fluid">
+                            </span>
+                        </a>
+                    </div>
+                    <!-- End Column 2 -->
+                }
 
-                        <span class="icon-cross">
-                            <img src="~/assets/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
-                <!-- End Column 3 -->
-                <!-- Start Column 4 -->
-                <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                    <a class="product-item" href="cart.html">
-                        <img src="~/assets/images/product-3.png" class="img-fluid product-thumbnail">
-                        <h3 class="product-title">Ergonomic Chair</h3>
-                        <strong class="product-price">$43.00</strong>
-
-                        <span class="icon-cross">
-                            <img src="~/assets/images/cross.svg" class="img-fluid">
-                        </span>
-                    </a>
-                </div>
-                <!-- End Column 4 -->
 
             </div>
         </div>
@@ -330,42 +308,23 @@
             </div>
 
             <div class="row">
+                @foreach (var blog in Model.BlogPosts.TakeLast(3))
+                {
 
-                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-                    <div class="post-entry">
-                        <a href="#" class="post-thumbnail"><img src="~/assets/images/post-1.jpg" alt="Image" class="img-fluid"></a>
-                        <div class="post-content-entry">
-                            <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                            <div class="meta">
-                                <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 19, 2021</a></span>
+                    <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+                        <div class="post-entry">
+                            <a href="#" class="post-thumbnail"><img src="~/assets/images/@blog.Image" alt="Image" class="img-fluid"></a>
+                            <div class="post-content-entry">
+                                <h3><a href="#">@blog.Title</a></h3>
+                                <div class="meta">
+                                    <span>by <a href="#">@blog.Author</a></span> <span>on <a href="#">@blog.CreatedDate.ToString("MMM dd, yyyy")</a></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
 
-                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-                    <div class="post-entry">
-                        <a href="#" class="post-thumbnail"><img src="~/assets/images/post-2.jpg" alt="Image" class="img-fluid"></a>
-                        <div class="post-content-entry">
-                            <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                            <div class="meta">
-                                <span>by <a href="#">Robert Fox</a></span> <span>on <a href="#">Dec 15, 2021</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
-                    <div class="post-entry">
-                        <a href="#" class="post-thumbnail"><img src="~/assets/images/post-3.jpg" alt="Image" class="img-fluid"></a>
-                        <div class="post-content-entry">
-                            <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                            <div class="meta">
-                                <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>

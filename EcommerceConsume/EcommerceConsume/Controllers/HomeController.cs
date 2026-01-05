@@ -32,17 +32,29 @@ public class HomeController : Controller
                 //    homeVM.Testimonials = new List<Testimonial>();
                 //}
 
-                //var productResponse = await client.GetAsync($"{BaseURl}/api/Product/GetAll");
-                //if (productResponse.IsSuccessStatusCode)
-                //{
-                //    string productApiResponse = await productResponse.Content.ReadAsStringAsync();
-                //    homeVM.Products = JsonConvert.DeserializeObject<IEnumerable<Product>>(productApiResponse);
-                //}
-                //else
-                //{
-                //    ViewData["Error"] = "API request failed with status code: " + productResponse.StatusCode;
-                //    homeVM.Products = new List<Product>();
-                //}
+                var productResponse = await client.GetAsync($"{BaseURl}/api/Product/GetAll");
+                if (productResponse.IsSuccessStatusCode)
+                {
+                    string productApiResponse = await productResponse.Content.ReadAsStringAsync();
+                    homeVM.Products = JsonConvert.DeserializeObject<IEnumerable<Product>>(productApiResponse);
+                }
+                else
+                {
+                    ViewData["Error"] = "API request failed with status code: " + productResponse.StatusCode;
+                    homeVM.Products = new List<Product>();
+                }
+
+                var blogPostResponse = await client.GetAsync($"{BaseURl}/api/blogPost/GetAll");
+                if (blogPostResponse.IsSuccessStatusCode)
+                {
+                    string blogPostApiResponse = await blogPostResponse.Content.ReadAsStringAsync();
+                    homeVM.BlogPosts = JsonConvert.DeserializeObject<IEnumerable<BlogPost>>(blogPostApiResponse);
+                }
+                else
+                {
+                    ViewData["Error"] = "API request failed with status code: " + blogPostResponse.StatusCode;
+                    homeVM.BlogPosts = new List<BlogPost>();
+                }
 
 
                 var settingResponse = await client.GetAsync($"{BaseURl}/api/setting/GetAll");

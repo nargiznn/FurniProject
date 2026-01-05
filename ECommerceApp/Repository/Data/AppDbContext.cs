@@ -12,6 +12,7 @@ namespace Repository.Data
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<BlogPost> BlogPosts { get; set; }
         public DbSet<Setting> Settings { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }

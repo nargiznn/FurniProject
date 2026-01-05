@@ -20,6 +20,7 @@ namespace Service
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ISliderService, SliderService>();
             services.AddScoped<ISettingService, SettingService>();
+            services.AddScoped<IBlogPostService, BlogPostService>();
             return services;
         }
     }
