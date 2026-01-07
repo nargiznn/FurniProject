@@ -17,18 +17,18 @@ namespace EcommerceConsume.Controllers
                 try
                 {
 
-                    //var testimonialResponse = await client.GetAsync($"{BaseURl}/api/Testimonial/GetAll");
-                    //if (testimonialResponse.IsSuccessStatusCode)
-                    //{
-                    //    string testimonialApiResponse = await testimonialResponse.Content.ReadAsStringAsync();
-                    //    aboutVM.Testimonials = (IEnumerable<Testimonial>)JsonConvert.DeserializeObject<IEnumerable<Testimonial>>(testimonialApiResponse);
+                    var testimonialResponse = await client.GetAsync($"{BaseURl}/api/Testimonial/GetAll");
+                    if (testimonialResponse.IsSuccessStatusCode)
+                    {
+                        string testimonialApiResponse = await testimonialResponse.Content.ReadAsStringAsync();
+                        aboutVM.Testimonials = (IEnumerable<Testimonial>)JsonConvert.DeserializeObject<IEnumerable<Testimonial>>(testimonialApiResponse);
 
-                    //}
-                    //else
-                    //{
-                    //    ViewData["Error"] = "API request failed with status code: " + testimonialResponse.StatusCode;
-                    //    aboutVM.Testimonials = new List<Testimonial>();
-                    //}
+                    }
+                    else
+                    {
+                        ViewData["Error"] = "API request failed with status code: " + testimonialResponse.StatusCode;
+                        aboutVM.Testimonials = new List<Testimonial>();
+                    }
 
                     var settingResponse = await client.GetAsync($"{BaseURl}/api/setting/GetAll");
                     if (settingResponse.IsSuccessStatusCode)
@@ -60,6 +60,21 @@ namespace EcommerceConsume.Controllers
                     {
                         ViewData["Error"] = "API request failed with status code: " + sliderResponse.StatusCode;
                         aboutVM.Sliders = new List<Slider>();
+                    }
+                    var teamResponse = await client.GetAsync($"{BaseURl}/api/team/GetAll");
+                    if (teamResponse.IsSuccessStatusCode)
+                    {
+                        string teamApiResponse = await teamResponse.Content.ReadAsStringAsync();
+                        aboutVM.Teams =
+                            JsonConvert.DeserializeObject<IEnumerable<Team>>(teamApiResponse)
+                            ?? new List<Team>();
+
+
+                    }
+                    else
+                    {
+                        ViewData["Error"] = "API request failed with status code: " + teamResponse.StatusCode;
+                        aboutVM.Teams = new List<Team>();
                     }
 
                 }

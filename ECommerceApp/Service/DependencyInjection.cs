@@ -22,6 +22,7 @@ namespace Service
             services.AddScoped<ISettingService, SettingService>();
             services.AddScoped<IBlogPostService, BlogPostService>();
             services.AddScoped<ITestimonialService, TestimonialService>();
+            services.AddScoped<ITeamService, TeamService>();
             return services;
         }
     }

@@ -57,8 +57,8 @@ namespace Service.Services
         }
         public async Task<IEnumerable<BrandDto>> GetAllAsync()
         {
-            var data = await _brandRepository.GetAllAsync();
-            return _mapper.Map<IEnumerable<BrandDto>>(data);
+            var datas = await _brandRepository.GetAllAsync();
+            return _mapper.Map<IEnumerable<BrandDto>>(datas);
         }
 
         public async Task<BrandDto> GetByIdAsync(int id)

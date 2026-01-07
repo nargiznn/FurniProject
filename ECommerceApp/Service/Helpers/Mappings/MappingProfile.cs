@@ -10,6 +10,7 @@ using Service.Helpers.DTOs.Categories;
 using Service.Helpers.DTOs.Product;
 using Service.Helpers.DTOs.Setting;
 using Service.Helpers.DTOs.Slider;
+using Service.Helpers.DTOs.Team;
 using Service.Helpers.DTOs.Testimonial;
 
 namespace Service.Helpers.Mappings
@@ -101,6 +102,10 @@ namespace Service.Helpers.Mappings
 
             #region Testimonial
             CreateMap<Testimonial, TestimonialDto>();
+            #endregion
+
+            #region Team
+            CreateMap<Team, TeamDto>();
             #endregion
         }
     }

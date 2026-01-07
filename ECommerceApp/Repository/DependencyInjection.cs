@@ -16,6 +16,7 @@ namespace Repository
             services.AddScoped<ISettingRepository, SettingRepository>();
             services.AddScoped<IBlogPostRepository, BlogPostRepository>();
             services.AddScoped<ITestimonialRepository, TestimonialRepository>();
+            services.AddScoped<ITeamRepository, TeamRepository>();
             return services;
 		}
 	}
