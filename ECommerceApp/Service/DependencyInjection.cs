@@ -21,6 +21,7 @@ namespace Service
             services.AddScoped<ISliderService, SliderService>();
             services.AddScoped<ISettingService, SettingService>();
             services.AddScoped<IBlogPostService, BlogPostService>();
+            services.AddScoped<ITestimonialService, TestimonialService>();
             return services;
         }
     }

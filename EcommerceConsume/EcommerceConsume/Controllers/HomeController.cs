@@ -19,18 +19,18 @@ public class HomeController : Controller
             try
             {
 
-                //var testimonialResponse = await client.GetAsync($"{BaseURl}/api/Testimonial/GetAll");
-                //if (testimonialResponse.IsSuccessStatusCode)
-                //{
-                //    string testimonialApiResponse = await testimonialResponse.Content.ReadAsStringAsync();
-                //    homeVM.Testimonials = (IEnumerable<Testimonial>)JsonConvert.DeserializeObject<IEnumerable<Testimonial>>(testimonialApiResponse);
+                var testimonialResponse = await client.GetAsync($"{BaseURl}/api/Testimonial/GetAll");
+                if (testimonialResponse.IsSuccessStatusCode)
+                {
+                    string testimonialApiResponse = await testimonialResponse.Content.ReadAsStringAsync();
+                    homeVM.Testimonials = (IEnumerable<Testimonial>)JsonConvert.DeserializeObject<IEnumerable<Testimonial>>(testimonialApiResponse);
 
-                //}
-                //else
-                //{
-                //    ViewData["Error"] = "API request failed with status code: " + testimonialResponse.StatusCode;
-                //    homeVM.Testimonials = new List<Testimonial>();
-                //}
+                }
+                else
+                {
+                    ViewData["Error"] = "API request failed with status code: " + testimonialResponse.StatusCode;
+                    homeVM.Testimonials = new List<Testimonial>();
+                }
 
                 var productResponse = await client.GetAsync($"{BaseURl}/api/Product/GetAll");
                 if (productResponse.IsSuccessStatusCode)

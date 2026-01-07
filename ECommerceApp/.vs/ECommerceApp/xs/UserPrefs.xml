@@ -1,64 +1,35 @@
 ﻿<Properties StartupConfiguration="{5BD496E2-F4D4-46D3-B022-620159D92A3F}|http">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ECommerceApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Entities/Product.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Common/BaseEntity.cs">
     <Files>
-      <File FileName="Domain/Entities/ProductImage.cs" />
-      <File FileName="ECommerceApp/Controllers/UI/AccountController.cs" />
-      <File FileName="Domain/Entities/Slider.cs" />
-      <File FileName="Repository/Data/AppDbContext.cs" Line="14" Column="51" />
-      <File FileName="Service/Helpers/DTOs/Slider/SliderDto.cs" Line="20" Column="39" />
-      <File FileName="Service/Helpers/Mappings/MappingProfile.cs" Line="99" Column="1" />
-      <File FileName="Service/Services/Interfaces/ISliderService.cs" />
-      <File FileName="Service/Services/SliderService.cs" />
-      <File FileName="Service/Services/ProductService.cs" Line="1" Column="1" />
-      <File FileName="Repository/Repositories/Interfaces/ISliderRepository.cs" />
-      <File FileName="Service/Services/CategoryService.cs" />
-      <File FileName="Repository/Repositories/Interfaces/IBaseRepository.cs" />
-      <File FileName="Repository/Repositories/BaseRepository.cs" />
-      <File FileName="Service/DependencyInjection.cs" Line="28" Column="1" />
-      <File FileName="ECommerceApp/Controllers/UI/SliderController.cs" />
-      <File FileName="ECommerceApp/Controllers/Admin/BrandController.cs" />
-      <File FileName="Domain/Entities/Setting.cs" Line="13" Column="1" />
-      <File FileName="Repository/Repositories/Interfaces/ISettingRepository.cs" Line="6" Column="63" />
-      <File FileName="Repository/Repositories/SettingRepository.cs" Line="16" Column="1" />
-      <File FileName="Repository/DependencyInjection.cs" Line="20" Column="2" />
-      <File FileName="Service/Helpers/DTOs/Setting/SettingDto.cs" Line="8" Column="42" />
-      <File FileName="Service/Helpers/DTOs/Setting/SettingEditDto.cs" Line="13" Column="1" />
-      <File FileName="Service/Services/Interfaces/ISettingService.cs" Line="14" Column="1" />
-      <File FileName="Service/Services/SettingService.cs" Line="21" Column="42" />
-      <File FileName="Domain/Common/BaseEntity.cs" Line="7" Column="69" />
-      <File FileName="ECommerceApp/Program.cs" Line="70" Column="1" />
-      <File FileName="ECommerceApp/Controllers/UI/SettingController.cs" Line="7" Column="38" />
-      <File FileName="Service/Helpers/DTOs/Product/ProductDto.cs" Line="22" Column="1" />
-      <File FileName="Service/Services/Interfaces/IProductService.cs" Line="1" Column="1" />
-      <File FileName="ECommerceApp/Controllers/UI/ProductController.cs" Line="29" Column="1" />
-      <File FileName="Domain/Entities/Product.cs" Line="20" Column="1" />
+      <File FileName="ECommerceApp/Controllers/UI/TestimonialController.cs" Line="17" Column="16" />
+      <File FileName="ECommerceApp/Controllers/UI/ProductController.cs" Line="1" Column="1" />
+      <File FileName="Service/Helpers/DTOs/Testimonial/TestimonialDto.cs" Line="6" Column="1" />
+      <File FileName="Domain/Common/BaseEntity.cs" Line="6" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ECommerceApp" expanded="True">
-            <Node name="Domain" expanded="True">
-              <Node name="Common" expanded="True" />
-              <Node name="Entities" expanded="True">
-                <Node name="Product.cs" selected="True" />
+            <Node name="Domain">
+              <Node name="Common" expanded="True">
+                <Node name="BaseEntity.cs" selected="True" />
               </Node>
+              <Node name="Entities" expanded="True" />
             </Node>
-            <Node name="ECommerceApp" expanded="True">
+            <Node name="ECommerceApp">
               <Node name="Controllers" expanded="True">
                 <Node name="UI" expanded="True" />
               </Node>
             </Node>
-            <Node name="Service" expanded="True">
-              <Node name="Helpers" expanded="True">
+            <Node name="Service">
+              <Node name="Helpers">
                 <Node name="DTOs" expanded="True">
-                  <Node name="Product" expanded="True" />
+                  <Node name="BlogPost" expanded="True" />
+                  <Node name="Testimonial" expanded="True" />
                 </Node>
-                <Node name="Mappings" expanded="True" />
-              </Node>
-              <Node name="Services" expanded="True">
-                <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -66,7 +37,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ECommerceApp PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

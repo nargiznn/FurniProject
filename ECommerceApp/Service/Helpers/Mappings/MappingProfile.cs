@@ -10,6 +10,7 @@ using Service.Helpers.DTOs.Categories;
 using Service.Helpers.DTOs.Product;
 using Service.Helpers.DTOs.Setting;
 using Service.Helpers.DTOs.Slider;
+using Service.Helpers.DTOs.Testimonial;
 
 namespace Service.Helpers.Mappings
 {
@@ -96,6 +97,10 @@ namespace Service.Helpers.Mappings
 
             #region BlogPost
             CreateMap<BlogPost, BlogPostDto>();
+            #endregion
+
+            #region Testimonial
+            CreateMap<Testimonial, TestimonialDto>();
             #endregion
         }
     }
