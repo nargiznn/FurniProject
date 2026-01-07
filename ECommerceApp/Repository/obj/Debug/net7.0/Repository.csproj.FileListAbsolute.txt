@@ -48,5 +48,4 @@
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.pdb
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.genruntimeconfig.cache
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/ref/Repository.dll
-/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.sourcelink.json
-/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.csproj.Up2Date
+/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Repository/obj/Debug/net7.0/Repository.csproj.CopyComplete

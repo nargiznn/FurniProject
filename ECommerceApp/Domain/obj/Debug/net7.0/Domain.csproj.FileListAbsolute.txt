@@ -40,4 +40,3 @@
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Domain/obj/Debug/net7.0/Domain.pdb
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Domain/obj/Debug/net7.0/Domain.genruntimeconfig.cache
 /Users/nergiznadirli/Desktop/Furni/ECommerceApp/Domain/obj/Debug/net7.0/ref/Domain.dll
-/Users/nergiznadirli/Desktop/Furni/ECommerceApp/Domain/obj/Debug/net7.0/Domain.sourcelink.json

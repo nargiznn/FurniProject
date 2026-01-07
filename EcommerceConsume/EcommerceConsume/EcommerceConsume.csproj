@@ -22,6 +22,7 @@
     <None Remove="ViewModels\" />
     <None Remove="Common\" />
     <None Remove="Views\Blog\" />
+    <None Remove="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -37,6 +38,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Common\" />
     <Folder Include="Views\Blog\" />
+    <Folder Include="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
